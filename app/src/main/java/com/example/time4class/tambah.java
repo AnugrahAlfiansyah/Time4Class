@@ -3,7 +3,6 @@ package com.example.time4class;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -37,7 +36,7 @@ public class tambah extends AppCompatActivity {
         ruangan = findViewById(R.id.ruang);
         dosen = findViewById(R.id.dosen);
         wm = findViewById(R.id.waktum);
-        ws = findViewById(R.id.waktus);
+        ws = findViewById(R.id.day);
         batal = findViewById(R.id.batal);
         simpan = findViewById(R.id.simpan);
         Spinner spinner = findViewById(R.id.hari);

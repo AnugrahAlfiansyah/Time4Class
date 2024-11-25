@@ -2,7 +2,6 @@ package com.example.time4class;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -31,7 +30,7 @@ public class edit extends AppCompatActivity {
         rn = findViewById(R.id.ruang);
         dn = findViewById(R.id.dosen);
         wm = findViewById(R.id.waktum);
-        ws = findViewById(R.id.waktus);
+        ws = findViewById(R.id.day);
         edit = findViewById(R.id.edit);
         batal = findViewById(R.id.batal);
         Spinner spinner = findViewById(R.id.hari);

@@ -57,4 +57,5 @@ public class adapter extends FirestoreRecyclerAdapter<Jadwal, adapter.jadwalHold
             waktus = itemView.findViewById(R.id.waktus);
         }
     }
+
 }

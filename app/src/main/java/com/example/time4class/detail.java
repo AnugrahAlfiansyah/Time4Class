@@ -25,7 +25,7 @@ public class detail extends AppCompatActivity {
         rn = findViewById(R.id.ruang);
         dn = findViewById(R.id.dosen);
         wm = findViewById(R.id.waktum);
-        ws = findViewById(R.id.waktus);
+        ws = findViewById(R.id.day);
         edit = findViewById(R.id.edit);
         hapus = findViewById(R.id.hapus);
         kembali = findViewById(R.id.back);

@@ -23,7 +23,7 @@ public class MainActivity2 extends AppCompatActivity {
     private TextView uname;
     private ImageView fprofile;
     private RecyclerView recyclerView;
-    adapter adapter;
+    adapter2 adapter2;
     private String email;
 
     @Override
@@ -78,31 +78,30 @@ public class MainActivity2 extends AppCompatActivity {
     void setupRecyclerview(){
         Query query = utility.getCollectionReferenceRorJadwal()
                 .whereEqualTo("email", email) // Filter berdasarkan email pengguna
-                .orderBy("hari", Query.Direction.ASCENDING); // Urutkan berdasarkan waktu mulai
+                .orderBy("hari", Query.Direction.ASCENDING);
         FirestoreRecyclerOptions<Jadwal> options = new FirestoreRecyclerOptions.Builder<Jadwal>()
                 .setQuery(query, Jadwal.class).build();
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        adapter = new adapter(options, this);
-        recyclerView.setAdapter(adapter);
-
+        adapter2 = new adapter2(options, this);
+        recyclerView.setAdapter(adapter2);
 
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        adapter.startListening();
+        adapter2.startListening();
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        adapter.stopListening();
+        adapter2.stopListening();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        adapter.notifyDataSetChanged();
+        adapter2.notifyDataSetChanged();
     }
 }
