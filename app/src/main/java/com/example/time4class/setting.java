@@ -43,6 +43,8 @@ public class setting extends AppCompatActivity {
         btno.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                FirebaseAuth.getInstance().signOut();
                 gsc.signOut().addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(Task<Void> task) {
