@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Warna latar belakang -->
+    <solid android:color="#E2E2E3" /> <!-- Ganti dengan warna yang Anda inginkan -->
+
+    <!-- Radius untuk sudut melengkung -->
+    <corners android:radius="16dp" /> <!-- Atur radius sesuai kebutuhan -->
+
+    <!-- Opsional: tambahkan efek shadow atau border -->
+    <padding
+        android:left="8dp"
+        android:top="8dp"
+        android:right="8dp"
+        android:bottom="8dp" />
+
+    <!-- Opsional: tambahkan garis tepi (border) -->
+    <!-- <stroke android:width="2dp" android:color="#3700B3" /> -->
+</shape>

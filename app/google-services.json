@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "822511488826",
+    "project_id": "time4class24",
+    "storage_bucket": "time4class24.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822511488826:android:7dccf9a02ba704d44d8a03",
+        "android_client_info": {
+          "package_name": "com.example.time4class"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "822511488826-75pb8svb2ljft9dsi4tmod43krskqom9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.time4class",
+            "certificate_hash": "43b196e52525cff9686e8ace205529aeed468fbb"
+          }
+        },
+        {
+          "client_id": "822511488826-a5ihu693rfh2lgtai8vlikmkvj7ifeiv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsf3ol38T5vg7D-D5EELzGO9wAvYrJISA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "822511488826-a5ihu693rfh2lgtai8vlikmkvj7ifeiv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

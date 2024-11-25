@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Header with profile and settings icon -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/fprofile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circleimg"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="Profile Picture"
+            android:src="@drawable/baseline_account_circle_24" />
+
+        <TextView
+            android:id="@+id/uname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="8dp"
+            android:text="Username"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/setting"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/baseline_build_circle_24"
+            android:contentDescription="Settings Icon" />
+    </LinearLayout>
+
+    <!-- Date selector -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg"
+            android:layout_marginRight="10dp"
+            android:text="Today"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/jadwal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn3_bg"
+            android:text="Schedule"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/tambah"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/baseline_add_circle_24"
+            android:backgroundTint="#2196F3"
+            android:contentDescription="Add Icon" />
+    </LinearLayout>
+
+    <!-- Title -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:text="Check your schedule for today"
+        android:textSize="40sp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#000" />
+
+    <!-- Task List -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Task item -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="447dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <!-- Repeat the above LinearLayout for each task item with different colors and content as needed -->
+
+    </LinearLayout>
+</LinearLayout>
