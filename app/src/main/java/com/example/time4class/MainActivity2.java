@@ -78,7 +78,7 @@ public class MainActivity2 extends AppCompatActivity {
     void setupRecyclerview(){
         Query query = utility.getCollectionReferenceRorJadwal()
                 .whereEqualTo("email", email) // Filter berdasarkan email pengguna
-                .orderBy("hari", Query.Direction.DESCENDING);
+                .orderBy("hari", Query.Direction.ASCENDING); // Urutkan berdasarkan waktu mulai
         FirestoreRecyclerOptions<Jadwal> options = new FirestoreRecyclerOptions.Builder<Jadwal>()
                 .setQuery(query, Jadwal.class).build();
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
